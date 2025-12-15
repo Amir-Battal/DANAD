@@ -34,18 +34,15 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP, SplitText, ScrollToP
 
 const App = () => {
 
-  const element = useRef(null)
-  const topContainer = useRef(null)
-
-  const deadline = useRef(null);
-
-  const logoWrapper = useRef(null);
-  const logoRef = useRef(null);
-  const wordLogoRef = useRef(null);
-  const headerRef = useRef(null);
-  const menuRef = useRef(null);
-
-  const heroCardRef = useRef(null);
+  const element = useRef<HTMLDivElement | null>(null);
+  const topContainer = useRef<HTMLDivElement | null>(null);
+  const deadline = useRef<HTMLDivElement | null>(null);
+  const logoWrapper = useRef<HTMLDivElement | null>(null);
+  const logoRef = useRef<HTMLDivElement | null>(null);
+  const wordLogoRef = useRef<HTMLDivElement | null>(null);
+  const headerRef = useRef<HTMLDivElement | null>(null);
+  const menuRef = useRef<HTMLUListElement | null>(null);
+  const heroCardRef = useRef<HTMLButtonElement | null>(null);
 
   const menuLocked = useRef(false);
 
@@ -83,18 +80,38 @@ const App = () => {
         scrub: true,
         pin: true,
         onEnter: () => {
-          document.querySelector(".Register").style.display = "none";
+          const registerEl = document.querySelector(".Register") as HTMLElement | null;
+          if (registerEl) {
+            registerEl.style.display = "none";
+          }
         },
         onUpdate: () => {
           if (master.progress() > 0.3) {
-            document.getElementById("smooth-wrapper").style.backgroundColor = "#f1f1f1";
-            document.getElementById("smooth-content").style.backgroundColor = "#f1f1f1";
-            document.querySelector(".HeroDetails").style.opacity = 0;
+            const wrapperEl = document.getElementById("smooth-wrapper") as HTMLElement | null;
+            const contentEl = document.getElementById("smooth-content") as HTMLElement | null;
+
+            if (wrapperEl && contentEl) {
+              wrapperEl.style.backgroundColor = "#f1f1f1";
+              contentEl.style.backgroundColor = "#f1f1f1";
+            }
+
+            const heroDetailsEl = document.querySelector(".HeroDetails") as HTMLElement | null;
+            if (heroDetailsEl) {
+              heroDetailsEl.style.opacity = "0";
+            }
           }
           else {
-            document.getElementById("smooth-wrapper").style.backgroundColor = "#9e8d16";
-            document.getElementById("smooth-content").style.backgroundColor = "#9e8d16";
-            document.querySelector(".HeroDetails").style.opacity = 1;
+            const wrapperEl = document.getElementById("smooth-wrapper") as HTMLElement | null;
+            const contentEl = document.getElementById("smooth-content") as HTMLElement | null;
+
+            if (wrapperEl && contentEl) {
+              wrapperEl.style.backgroundColor = "#9e8d16";
+              contentEl.style.backgroundColor = "#9e8d16";
+            }
+            const heroDetailsEl = document.querySelector(".HeroDetails") as HTMLElement | null;
+            if (heroDetailsEl) {
+              heroDetailsEl.style.opacity = "1";
+            }
             
           }
         },
@@ -117,7 +134,11 @@ const App = () => {
             duration: 0.3,
             ease: "power2.out",
           });
-          document.querySelector(".Register").style.display = "block";
+
+          const registerEl = document.querySelector(".Register") as HTMLElement | null;
+          if (registerEl) {
+            registerEl.style.display = "block";
+          }
         }
       }
     });
@@ -265,9 +286,9 @@ const App = () => {
 
   useGSAP(() => {
     const card = heroCardRef.current;
-    const bg = card.querySelector(".hero-bg");
-    const text = card.querySelectorAll(".hero-text");
-    const circle = card.querySelector(".circle-rotate");
+    const bg = card?.querySelector(".hero-bg") || null;
+    const text = card?.querySelectorAll(".hero-text") || null;
+    const circle = card?.querySelector(".circle-rotate") || null;
 
     gsap.set(circle, {
       transformOrigin: "50% 50%",
@@ -293,8 +314,8 @@ const App = () => {
       ease: "power2.inOut",
     }, 0);
 
-    card.addEventListener("mouseenter", () => tl.play());
-    card.addEventListener("mouseleave", () => tl.reverse());
+    card?.addEventListener("mouseenter", () => tl.play());
+    card?.addEventListener("mouseleave", () => tl.reverse());
   }, []);
 
 

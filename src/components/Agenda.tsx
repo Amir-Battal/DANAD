@@ -66,8 +66,8 @@ const Agenda = () => {
     });
 
     /* ---------- Helper ---------- */
-    function agendaTextAnimation(yPercent, start, end, stagger) {
-      gsap.utils.toArray(".Details2ParagraphContainer").forEach((container) => {
+    function agendaTextAnimation(yPercent: any, start: any, end: any, stagger: any) {
+      gsap.utils.toArray(".Details2ParagraphContainer").forEach((container: any) => {
         const text = container.querySelector(".Details2Paragraph");
         if (!text) return;
 

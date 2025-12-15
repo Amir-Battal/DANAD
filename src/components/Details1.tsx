@@ -104,7 +104,7 @@ const Details1 = () => {
 
   /* ---------- Helpers ---------- */
 
-  function titleAnimation(y, start, end) {
+  function titleAnimation(y: any, start: any, end: any) {
     const text = document.querySelector(".Details1Title");
     const container = document.querySelector(".Details1TitleContainer");
     if (!text || !container) return;
@@ -132,8 +132,8 @@ const Details1 = () => {
     return () => split.revert();
   }
 
-  function paragraphsAnimation(yPercent, start, end) {
-    gsap.utils.toArray(".Details1Paragraph1Container").forEach((container) => {
+  function paragraphsAnimation(yPercent: any, start: any, end: any) {
+    gsap.utils.toArray(".Details1Paragraph1Container").forEach((container: any) => {
 
       const text = container.querySelector(".Details1Paragraph1");
       if (!text) return;

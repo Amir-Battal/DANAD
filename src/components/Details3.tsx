@@ -102,7 +102,7 @@ const Details3 = () => {
     });
 
     /* ---------- Title ---------- */
-    function titleAnimation(y, start, end, stagger) {
+    function titleAnimation(y: any, start: any, end: any, stagger: any) {
       const text = document.querySelector(".Details3Title");
       const container = document.querySelector(".Details3TitleContainer");
       if (!text || !container) return;
@@ -131,10 +131,10 @@ const Details3 = () => {
     }
 
     /* ---------- Paragraphs ---------- */
-    function paragraphAnimation(yPercent, start, end, stagger) {
+    function paragraphAnimation(yPercent: any, start: any, end: any, stagger: any) {
       gsap.set(".Details3Paragraph", { opacity: 1 });
 
-      gsap.utils.toArray(".Details3ParagraphContainer").forEach((container) => {
+      gsap.utils.toArray(".Details3ParagraphContainer").forEach((container: any) => {
         const text = container.querySelector(".Details3Paragraph");
         if (!text) return;
 

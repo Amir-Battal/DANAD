@@ -94,10 +94,10 @@ const Footer = () => {
     });
   }
 
-  function handleCollisions(activeEl) {
+  function handleCollisions(activeEl: any) {
     const a = activeEl.getBoundingClientRect();
 
-    elements.forEach((el) => {
+    elements.forEach((el: any) => {
       if (el === activeEl) return;
 
       const b = el.getBoundingClientRect();
@@ -116,7 +116,7 @@ const Footer = () => {
     });
   }
 
-  function isColliding(a, b) {
+  function isColliding(a: any, b: any) {
     return !(
       a.right < b.left ||
       a.left > b.right ||

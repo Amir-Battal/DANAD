@@ -67,8 +67,8 @@ const Details2 = () => {
 
     /* ---------- Helper ---------- */
 
-    function paragraphsAnimation(yPercent, start, end, stagger) {
-      gsap.utils.toArray(".Details2ParagraphContainer").forEach((container) => {
+    function paragraphsAnimation(yPercent: any, start: any, end: any, stagger: any) {
+      gsap.utils.toArray(".Details2ParagraphContainer").forEach((container: any) => {
         const text = container.querySelector(".Details2Paragraph");
         if (!text) return;
 

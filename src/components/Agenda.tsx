@@ -4,7 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 
-const Video2 = "https://res.cloudinary.com/dqe36doqn/video/upload/v1765864098/DND_Train_V02_db88yw.mp4"
+const Video2 =
+  "https://res.cloudinary.com/dqe36doqn/video/upload/" +
+  "f_mp4,vc_h264,ac_none,br_2500k/" +
+  "v1765864098/DND_Train_V02_db88yw.mp4";
+
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 

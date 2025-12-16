@@ -208,7 +208,7 @@ const Details1 = () => {
       <div dir="rtl" className="w-full h-auto lg:h-[750px] flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row-reverse text-[14px] mt-[5%] md:text-[20px] md:mt-[10%] lg:text-[28px] lg:mt-0 font-[TraditionalArabic] text-[#2b1609] overflow-hidden">
         <div className="w-full flex flex-row items-end h-[200px] md:h-[400px] lg:hidden">
           <img className="Details1Media w-1/3 h-[90%] bg-black object-cover" src={Image1} alt="" />
-          <video className="w-1/3 h-[80%] bg-black object-cover" src={Video1} autoPlay loop />
+          <video className="w-1/3 h-[80%] bg-black object-cover" src={Video1} autoPlay loop muted playsInline />
           <img className="Details1Media w-1/3 h-full bg-black object-cover" src={Image3} alt="" />
         </div>
         <div className="Details1Paragraph1Container w-[90%] lg:w-1/3 flex flex-col mx-[2%] lg:mx-0">

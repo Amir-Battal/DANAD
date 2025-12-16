@@ -163,8 +163,4 @@ body {
   transform: scale(1);
 }
 
-svg {
-  max-width: 100%;
-  overflow: hidden;
-}
 

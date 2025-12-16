@@ -433,9 +433,9 @@ const App = () => {
 
         <div ref={topContainer} className="absolute w-full h-screen mt-[1%]"></div>
 
-        <div ref={element} id="element" className="circle w-full h-screen mt-[1%]">
+        <div ref={element} id="element" className="circle md:w-full h-screen mt-[1%]">
           <div className="absolute w-full h-screen flex justify-center items-center">
-            <div id="whiteCircle" className="absolute w-[40%] md:w-[40%] lg:w-[20%] h-[18%] md:h-[30%] lg:h-[34%] bg-[#f1f1f1] rounded-[100%] z-0"></div>
+            <div id="whiteCircle" className="absolute w-[20%] md:w-[40%] lg:w-[20%] h-[10%] md:h-[30%] lg:h-[34%] bg-[#f1f1f1] rounded-[100%] z-0"></div>
           </div>
           <div id="insideElement">
             <Pattern1 className="circ1" />

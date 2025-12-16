@@ -4,7 +4,7 @@ const Pattern1 = (props: any) => {
 
   return (
     <div className={`absolute w-screen h-screen flex justify-center items-center ${props.className}`}>
-      <svg className="size-[53%] md:size-[54%] lg:size-[50%] rounded-[100%]" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200.55 1173.26">
+      <svg className="size-[20%] md:size-[54%] lg:size-[50%] rounded-[100%]" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200.55 1173.26">
         <g>
           <path className="st1" d="M1072.63,802.04l.71,1.87-191.99-89.04c3.83-8.07,7.29-16.32,10.41-24.73l247.08,89.18-66.21,22.73h0Z"/>
           <path className="st1" d="M1118.96,629.08l1.39,1.59-211.02-18.05c.81-8.82,1.25-17.77,1.29-26.8l262.78-.71-54.44,43.96h0Z"/>

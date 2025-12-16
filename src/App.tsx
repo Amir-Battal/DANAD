@@ -426,7 +426,7 @@ const App = () => {
       <div id="smooth-content" className="bg-[#9e8d16] w-full min-h-[3000px]">
 
         <div className="HeroDetails absolute w-full h-screen flex justify-end">
-          <div className="mr-[2%] mt-[40%] md:mt-[20%] lg:mt-[50%]">
+          <div className="mr-[2%] mt-[30%] md:mt-[20%] lg:mt-[50%]">
             <TextLogo />
           </div>
         </div>

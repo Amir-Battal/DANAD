@@ -4,7 +4,7 @@ const Pattern1_2 = (props: any) => {
 
   return (
     <div className={`absolute w-screen h-screen flex justify-center items-center ${props.className}`}>
-      <svg className="size-[28%] md:size-[76%] ml-[1%]" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1742.13 1772.75">
+      <svg className="size-[43%] md:size-[76%] ml-[1%]" id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1742.13 1772.75">
         <g id="Layer_2">
           <g>
             <polygon className="st0" points="1490.09 1328.55 1490.32 1329.74 1278.12 1181.82 1278.12 1181.78 1277.74 1179.88 1346.94 1168.96 1596.02 1311.87 1490.09 1328.55"/>

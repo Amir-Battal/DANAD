@@ -168,11 +168,11 @@ const Agenda = () => {
       <div dir="rtl" className="mt-5 pt-5">
         <div className="mx-[2%] w-full flex flex-row justify-between text-[#f1f1f1]">
 
-          <div className="md:w-1/2 lg:w-1/3 Details2ParagraphContainer">
+          <div className="w-1/2 lg:w-1/3 Details2ParagraphContainer">
             <h1 className="Details2Paragraph font-[Guesswhat] text-[40px] md:text-[90px]">الأجنــدة</h1>
           </div>
 
-          <div className="md:w-1/2 lg:w-1/3 Details2ParagraphContainer">
+          <div className="w-1/2 lg:w-1/3 Details2ParagraphContainer">
             <h1 className="Details2Paragraph font-[Guesswhat] text-[40px] md:text-[90px]">٢٠٢٥</h1>
           </div>
 

@@ -3,6 +3,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
+
+const Video2 = "https://res.cloudinary.com/dqe36doqn/video/upload/v1765864098/DND_Train_V02_db88yw.mp4"
+
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 
 const Agenda = () => {
@@ -103,18 +106,38 @@ const Agenda = () => {
     }
   });
 
+  useGSAP(() => {
+    gsap.fromTo(
+      ".agenda-video",
+      {
+        scale: 1,
+      },
+      {
+        scale: 1.08,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".agenda-video",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+        },
+      }
+    );
+  });
+
+
 
   return (
-    <section id="agenda" className="w-screen h-auto bg-[#a6a2fe]">
+    <section id="agenda" className="w-screen h-auto bg-[#a6a2fe] overflow-hidden">
       <div dir="rtl" className="mt-5 pt-5">
         <div className="mx-[2%] w-full flex flex-row justify-between text-[#f1f1f1]">
 
           <div className="md:1/2 lg:w-1/3 Details2ParagraphContainer">
-            <h1 className="Details2Paragraph font-[Guesswhat] text-[45px] md:text-[90px]">الأجنــدة</h1>
+            <h1 className="Details2Paragraph font-[Guesswhat] text-[40px] lg:text-[90px]">الأجنــدة</h1>
           </div>
 
           <div className="w-1/3 Details2ParagraphContainer">
-            <h1 className="Details2Paragraph font-[Guesswhat] text-[45px] md:text-[90px]">٢٠٢٥</h1>
+            <h1 className="Details2Paragraph font-[Guesswhat] text-[40px] md:text-[90px]">٢٠٢٥</h1>
           </div>
 
           <div className="w-1/3 Details2ParagraphContainer hidden lg:block">
@@ -237,9 +260,7 @@ const Agenda = () => {
 
         </div>
         
-        <div className="w-screen bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%]">
-
-        </div>
+        <video className="agenda-video w-screen bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline />
       </div>
     </section>
   );

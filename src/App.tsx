@@ -1,4 +1,3 @@
-// import Navbar from "./components/Navbar";
 import gsap from "gsap";
 import Pattern1 from "./components/Pattern1/Pattern1";
 import Pattern1_2 from "./components/Pattern1/Pattern1_2";
@@ -355,7 +354,7 @@ const App = () => {
               onClick={() => scrollToSection("#danad")}
               className="hover:text-[#ff6d3a] cursor-pointer"
             >
-              دند
+              تراثنا
             </button>
           </li>
 
@@ -364,7 +363,7 @@ const App = () => {
               onClick={() => scrollToSection("#team")}
               className="hover:text-[#ff6d3a] cursor-pointer"
             >
-              فريق العمل
+              دند
             </button>
           </li>
 
@@ -426,7 +425,6 @@ const App = () => {
             <Pattern1_2 className="circ2" />
             <Pattern1_3 className="circ3" />
           </div>
-          {/* <div className="w-screen h-screen bg-[#9e8d16]"></div> */}
         </div>
 
         <div ref={deadline} id="deadline" dir="rtl" className="absolute w-screen h-screen flex flex-row justify-around font-[Guesswhat] text-[50px] md:text-[80px] lg:text-[120px] opacity-0 pointer-events-none mt-[-100%] md:mt-[-60%] lg:mt-[-20%]">

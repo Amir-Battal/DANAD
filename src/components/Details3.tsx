@@ -3,6 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
+const Image7 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864283/065c92b85b776dbc322bdce60c09c848_rdreu1.jpg"
+const Image8 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864284/andrei-r-popescu--wxTHHFpB1E-unsplash_copy_af1nec.jpg"
+const Image9 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864282/the-cleveland-museum-of-art-fhqiVI9ot2U-unsplash_copy_sfngfw.jpg"
+
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText)
 
 const Details3 = () => {
@@ -162,8 +166,8 @@ const Details3 = () => {
 
 
   return (
-    <section className="w-screen h-auto lg:h-[1350px]">
-      <div dir="rtl" className="mt-5 mx-[2%] text-[#2b1609]">
+    <section className="w-screen h-auto lg:h-[1350px] overflow-hidden">
+      <div dir="rtl" className="mt-5 text-[#2b1609] mx-[2%]">
         <div className="Details3TitleContainer font-[GuessWhat] text-[30px] md:text-[60px] lg:text-[90px]">
           <h1 className="Details3Title">مساحات وهوية: التصميم في المشهد الحضري ملامح المدينة… رؤى تُصمَّم</h1>
         </div>
@@ -183,13 +187,13 @@ const Details3 = () => {
 
         <div className="w-full h-[250px] md:h-[500px] lg:h-[700px] flex flex-row justify-between items-end mt-[5%]">
           <div className="w-1/3 h-full">
-            <img className="w-full h-full bg-gray-400" alt="" />
+            <img className="Details1Media w-full h-full bg-gray-400 object-cover" src={Image7} alt="" />
           </div>
           <div className="w-1/3 h-[85%]">
-            <img className="w-full h-full bg-gray-400" alt="" />
+            <img className="Details1Media w-full h-full bg-gray-400 object-cover" src={Image8} alt="" />
           </div>
           <div className="w-1/3 h-[93%]">
-            <img className="w-full h-full bg-gray-400" alt="" />
+            <img className="Details1Media w-full h-full bg-gray-400 object-cover" src={Image9} alt="" />
           </div>
         </div>
       </div>

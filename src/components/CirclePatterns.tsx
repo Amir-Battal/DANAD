@@ -35,11 +35,11 @@ const CirclePatterns = () => {
   });
 
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="w-full h-[120px] md:h-[300px] lg:h-[500px] flex flex-row jusbet">
 
         <div className="w-[25%] bg-[#eeff7c] overflow-hidden flex justify-center items-center">
-          <div className="absolute w-full h-full flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-99">
+          <div className="absolute w-full h-auto flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-1">
             <DanadEin className="size-[40%] md:size-[70%] lg:size-[150%]" />
           </div>
           <div className="PatternMove relative w-full h-full overflow-hidden">
@@ -50,7 +50,7 @@ const CirclePatterns = () => {
         </div>
 
         <div className="w-[25%] bg-[#eeff7c] overflow-hidden flex justify-center items-center">
-          <div className="absolute w-full h-full flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-99">
+          <div className="absolute w-full h-auto flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-1">
             <DanadEin className="size-[40%] md:size-[70%] lg:size-[150%]" />
           </div>
           <div className="PatternMove relative w-full h-full overflow-hidden">
@@ -61,7 +61,7 @@ const CirclePatterns = () => {
         </div>
 
         <div className="w-[25%] bg-[#eeff7c] overflow-hidden flex justify-center items-center">
-          <div className="absolute w-full h-full flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-99">
+          <div className="absolute w-full h-auto flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-1">
             <DanadEin className="size-[40%] md:size-[70%] lg:size-[150%]" />
           </div>
           <div className="PatternMove relative w-full h-full overflow-hidden">
@@ -72,7 +72,7 @@ const CirclePatterns = () => {
         </div>
 
         <div className="w-[25%] bg-[#eeff7c] overflow-hidden flex justify-center items-center">
-          <div className="absolute w-full h-full flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-99">
+          <div className="absolute w-full h-auto flex items-center justify-center overflow-hidden ml-[50%] md:ml-[15%] lg:mr-[25%] z-1">
             <DanadEin className="size-[40%] md:size-[70%] lg:size-[150%]"  />
           </div>
           <div className="PatternMove relative w-full h-full overflow-hidden">

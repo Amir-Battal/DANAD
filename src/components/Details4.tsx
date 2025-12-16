@@ -3,6 +3,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
+import Mask2 from "./Masks/Mask2";
+import Mask1 from "./Masks/Mask1";
+import Mask3 from "./Masks/Mask3";
+
+const Image10 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864337/DND_M30_copy_pk949i.jpg"
+const Image11 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864333/DND_M32_copy_dhn3ia.jpg"
+const Image12 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864338/DND_M36_copy_zsbacg.jpg"
+const Image13 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864337/DND_M41_copy_vlfbfx.jpg"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText)
 
@@ -96,7 +104,7 @@ const Details4 = () => {
 
 
   return (
-    <section className="w-screen h-[850px] md:h-[1550px] lg:h-[1450px]">
+    <section className="w-screen h-[850px] md:h-[1550px] lg:h-[1450px] overflow-hidden">
       <div dir="rtl" className="mt-5 mx-[2%]">
         <div className=" w-full h-auto flex flex-row justify-between text-[#2b1609]">
 
@@ -146,19 +154,61 @@ const Details4 = () => {
 
           <div className="w-full flex flex-row gap-5">
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image10}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask2 className="w-full h-full flex justify-center items-center fill-[#a6a2fe]" />
+                </div>
+              </div>
             </div>
+
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image11}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask1 className="w-full h-full flex justify-center items-center fill-[#ff6d3a]" />
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-row justify-end gap-5">
             <div className="w-1/2 lg:w-[47%]">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image13}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask2 className="w-full h-full flex justify-center items-center fill-[#eeff7c]" />
+                </div>
+              </div>
             </div>
+
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image12}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask3 className="w-full h-full flex justify-center items-center fill-[#9e8d16]" />
+                </div>
+              </div>
             </div>
           </div>
 

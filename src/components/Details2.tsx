@@ -3,6 +3,16 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
+
+import Mask1 from "./Masks/Mask1";
+import Mask2 from "./Masks/Mask2";
+import Mask3 from "./Masks/Mask3";
+
+const Image3 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864222/DND_M40_copy_snrxxm.jpg"
+const Image4 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864220/DND_M24_copy_hq3yo2.jpg"
+const Image5 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864223/DND_M26_copy_mo7duo.jpg"
+const Image6 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864222/DND_M23B_copy_2_yx0t3b.jpg"
+
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 
 const Details2 = () => {
@@ -105,8 +115,43 @@ const Details2 = () => {
   });
 
 
+  useGSAP(() => {
+    gsap.utils.toArray(".image-wrap").forEach((wrap: any) => {
+      const mask = wrap.querySelector(".mask");
+
+      gsap.set(mask, {
+        opacity: 0,
+        rotate: 90,
+        scale: 0.8,
+        transformOrigin: "50% 50%",
+      });
+
+      wrap.addEventListener("mouseenter", () => {
+        gsap.to(mask, {
+          opacity: 1,
+          rotate: 0,
+          scale: 2.2,
+          duration: 0.6,
+          ease: "power3.out",
+        });
+      });
+
+      wrap.addEventListener("mouseleave", () => {
+        gsap.from(mask, {
+          opacity: 0,
+          rotate: -90,
+          scale: 2,
+          // duration: 0.5,
+          ease: "power3.in",
+        });
+      });
+    });
+  });
+
+
+
   return (
-    <section id="team" className="w-screen  md:h-[1200px]">
+    <section id="team" className="w-screen  md:h-[1100px] z-5 overflow-hidden">
       <div dir="rtl" className="mt-5 mx-[2%]">
         <div className="mx-[2%] w-full flex flex-row justify-between text-[#2b1609]">
 
@@ -129,24 +174,63 @@ const Details2 = () => {
         <div className="w-full mt-[5%] flex flex-col gap-5 text-[#2b1609]">
 
           <div className="w-full flex flex-row gap-5">
+
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
-              <h4 className="font-[TraditionalArabic] text-[28px]">أمجد بطال</h4>
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image3}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask2 className="w-full h-full flex justify-center items-center fill-[#a6a2fe]" />
+                </div>
+              </div>
             </div>
+
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
-              <h4 className="font-[TraditionalArabic] text-[28px]">محمد علي بابنسي</h4>
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image4}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask1 className="w-full h-full flex justify-center items-center fill-[#ff6d3a]" />
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-row justify-end gap-5">
             <div className="w-1/2 lg:w-[47%]">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
-              <h4 className="font-[TraditionalArabic] text-[28px]">فريق عمل مختص</h4>
+              
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image5}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask2 className="w-full h-full flex justify-center items-center fill-[#eeff7c]" />
+                </div>
+              </div>
             </div>
             <div className="w-1/2 lg:w-1/4">
-              <img className="w-full h-[200px] md:h-[400px] bg-gray-400" alt="" />
-              <h4 className="font-[TraditionalArabic] text-[28px]">أمير بطال</h4>
+              <div className="image-wrap relative overflow-hidden group cursor-pointer">
+                <img
+                  src={Image6}
+                  className="w-full h-[200px] md:h-[400px] object-cover"
+                />
+
+                {/* Mask */}
+                <div className="mask absolute inset-0 pointer-events-none">
+                  <Mask3 className="w-full h-full flex justify-center items-center fill-[#9e8d16]" />
+                </div>
+              </div>
             </div>
           </div>
 

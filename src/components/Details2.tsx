@@ -223,7 +223,7 @@ const Details2 = () => {
               <div className="image-wrap relative overflow-hidden group cursor-pointer">
                 <img
                   src={Image6}
-                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover"
+                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover object-bottom"
                 />
 
                 {/* Mask */}

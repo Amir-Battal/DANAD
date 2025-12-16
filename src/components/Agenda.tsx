@@ -119,10 +119,10 @@ const Agenda = () => {
     gsap.fromTo(
       ".agenda-video",
       {
-        scale: 1,
+        scale: 0.99,
       },
       {
-        scale: 1.08,
+        scale: 1,
         ease: "none",
         scrollTrigger: {
           trigger: ".agenda-video",
@@ -299,7 +299,7 @@ const Agenda = () => {
         {/* <video className="agenda-video w-full bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline /> */}
         <video
           ref={videoRef}
-          className="agenda-video w-full h-[250px] md:h-[500px] lg:h-[750px] object-cover"
+          className="agenda-video w-full h-[250px] hidden md:block md:h-[500px] lg:h-[750px] object-cover md:mt-[3%] lg:mt-[1%]"
           src={Video2}
           muted
           loop

@@ -166,7 +166,7 @@ const Details3 = () => {
 
 
   return (
-    <section className="w-screen h-auto lg:h-[1350px] overflow-hidden">
+    <section className="w-full h-auto lg:h-[1350px] overflow-hidden">
       <div dir="rtl" className="mt-5 text-[#2b1609] mx-[2%]">
         <div className="Details3TitleContainer font-[GuessWhat] text-[30px] md:text-[60px] lg:text-[90px]">
           <h1 className="Details3Title">مساحات وهوية: التصميم في المشهد الحضري ملامح المدينة… رؤى تُصمَّم</h1>

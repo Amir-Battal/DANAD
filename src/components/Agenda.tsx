@@ -132,7 +132,7 @@ const Agenda = () => {
 
 
   return (
-    <section id="agenda" className="w-screen h-auto bg-[#a6a2fe] overflow-hidden">
+    <section id="agenda" className="w-full h-auto bg-[#a6a2fe] overflow-hidden">
       <div dir="rtl" className="mt-5 pt-5">
         <div className="mx-[2%] w-full flex flex-row justify-between text-[#f1f1f1]">
 
@@ -264,7 +264,7 @@ const Agenda = () => {
 
         </div>
         
-        <video className="agenda-video w-screen bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline />
+        <video className="agenda-video w-full bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline />
       </div>
     </section>
   );

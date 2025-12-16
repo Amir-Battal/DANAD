@@ -151,7 +151,7 @@ const Details2 = () => {
 
 
   return (
-    <section id="team" className="w-screen  md:h-[1100px] z-5 overflow-hidden">
+    <section id="team" className="w-full  md:h-[1100px] z-5 overflow-hidden">
       <div dir="rtl" className="mt-5 mx-[2%]">
         <div className="mx-[2%] w-full flex flex-row justify-between text-[#2b1609]">
 

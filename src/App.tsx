@@ -379,7 +379,7 @@ const App = () => {
 
         </ul>
 
-        <div className="Register absolute w-screen mt-[52%]">
+        <div className="Register absolute w-full mt-[52%]">
           <button
             ref={heroCardRef}
             className="hero-card relative overflow-hidden w-[320px] h-[90px] bg-[#f1f1f1] mt-[300%] md:mt-[180%] xl:mt-[48%] ml-[2%] px-[0.5%] flex flex-row-reverse justify-between items-center cursor-pointer"
@@ -406,18 +406,18 @@ const App = () => {
 
 
 
-      <div id="smooth-content" className="bg-[#9e8d16] w-screen min-h-[3000px]">
+      <div id="smooth-content" className="bg-[#9e8d16] w-full min-h-[3000px]">
 
-        <div className="HeroDetails absolute w-screen h-screen flex justify-end">
+        <div className="HeroDetails absolute w-full h-screen flex justify-end">
           <div className="mr-[2%] mt-[40%] md:mt-[20%] lg:mt-[50%]">
             <TextLogo />
           </div>
         </div>
 
-        <div ref={topContainer} className="absolute w-screen h-screen mt-[1%]"></div>
+        <div ref={topContainer} className="absolute w-full h-screen mt-[1%]"></div>
 
-        <div ref={element} id="element" className="circle w-screen h-screen mt-[1%]">
-          <div className="absolute w-screen h-screen flex justify-center items-center">
+        <div ref={element} id="element" className="circle w-full h-screen mt-[1%]">
+          <div className="absolute w-full h-screen flex justify-center items-center">
             <div id="whiteCircle" className="absolute w-[40%] md:w-[40%] lg:w-[20%] h-[18%] md:h-[30%] lg:h-[34%] bg-[#f1f1f1] rounded-[100%] z-0"></div>
           </div>
           <div id="insideElement">
@@ -427,7 +427,7 @@ const App = () => {
           </div>
         </div>
 
-        <div ref={deadline} id="deadline" dir="rtl" className="absolute w-screen h-screen flex flex-row justify-around font-[Guesswhat] text-[50px] md:text-[80px] lg:text-[120px] opacity-0 pointer-events-none mt-[-100%] md:mt-[-60%] lg:mt-[-20%]">
+        <div ref={deadline} id="deadline" dir="rtl" className="absolute w-full h-screen flex flex-row justify-around font-[Guesswhat] text-[50px] md:text-[80px] lg:text-[120px] opacity-0 pointer-events-none mt-[-100%] md:mt-[-60%] lg:mt-[-20%]">
           <div className="w-[150px] h-[80px] md:w-[300px] md:h-[120px] lg:w-[500px] lg:h-[150px] bg-[#eeff7c] flex justify-center items-center overflow-hidden">
             <h1 className="deadline-text text-[#ff6d3a]">٢٢ - ٢٤</h1>
           </div>

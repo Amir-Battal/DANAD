@@ -104,7 +104,7 @@ const Details4 = () => {
 
 
   return (
-    <section className="w-screen h-[850px] md:h-[1550px] lg:h-[1450px] overflow-hidden">
+    <section className="w-full h-[850px] md:h-[1550px] lg:h-[1450px] overflow-hidden">
       <div dir="rtl" className="mt-5 mx-[2%]">
         <div className=" w-full h-auto flex flex-row justify-between text-[#2b1609]">
 

@@ -179,7 +179,7 @@ const Details2 = () => {
               <div className="image-wrap relative overflow-hidden group cursor-pointer">
                 <img
                   src={Image3}
-                  className="w-full h-[200px] md:h-[400px] object-cover"
+                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover"
                 />
 
                 {/* Mask */}
@@ -193,7 +193,7 @@ const Details2 = () => {
               <div className="image-wrap relative overflow-hidden group cursor-pointer">
                 <img
                   src={Image4}
-                  className="w-full h-[200px] md:h-[400px] object-cover"
+                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover"
                 />
 
                 {/* Mask */}
@@ -210,7 +210,7 @@ const Details2 = () => {
               <div className="image-wrap relative overflow-hidden group cursor-pointer">
                 <img
                   src={Image5}
-                  className="w-full h-[200px] md:h-[400px] object-cover"
+                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover"
                 />
 
                 {/* Mask */}
@@ -223,7 +223,7 @@ const Details2 = () => {
               <div className="image-wrap relative overflow-hidden group cursor-pointer">
                 <img
                   src={Image6}
-                  className="w-full h-[200px] md:h-[400px] object-cover"
+                  className="Details1Media w-full h-[200px] md:h-[400px] object-cover"
                 />
 
                 {/* Mask */}

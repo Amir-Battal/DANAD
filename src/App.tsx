@@ -65,10 +65,27 @@ const App = () => {
 
 
   useGSAP(() => {
-    ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.5,
+    // ScrollSmoother.create({
+    //   wrapper: "#smooth-wrapper",
+    //   content: "#smooth-content",
+    //   smooth: 1.5,
+    // });
+    ScrollTrigger.matchMedia({
+      "(min-width: 1024px)": () => {
+        ScrollSmoother.create({
+          wrapper: "#smooth-wrapper",
+          content: "#smooth-content",
+          smooth: 1.5,
+        });
+      }
+    });
+
+    ScrollTrigger.matchMedia({
+      "(max-width: 767px)": () => {
+        gsap.to(element.current, {
+          scale: 3, // ❌ لا 8
+        });
+      },
     });
 
     const master = gsap.timeline({
@@ -322,7 +339,7 @@ const App = () => {
 
 
   return (
-    <div id="smooth-wrapper" className="bg-[#9e8d16] overflow-hidden">
+    <div id="smooth-wrapper" className="bg-[#9e8d16] overflow-x-hidden">
       <div
         ref={headerRef}
         className="fixed w-full top-6 z-999 flex flex-row-reverse justify-between items-center gap-8"

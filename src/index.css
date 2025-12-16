@@ -111,6 +111,13 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -154,5 +161,10 @@
 
 .media-zoom.is-visible {
   transform: scale(1);
+}
+
+svg {
+  max-width: 100%;
+  overflow: hidden;
 }
 

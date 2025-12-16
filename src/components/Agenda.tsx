@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { useEffect, useRef } from "react";
 
 
 const Video2 =
@@ -12,7 +13,11 @@ const Video2 =
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 
+
+
 const Agenda = () => {
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   // useGSAP(() => {
   //   gsap.set(".Details2Paragraph", {opacity: 1});
@@ -128,6 +133,33 @@ const Agenda = () => {
       }
     );
   });
+
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.muted = true;
+    video.playsInline = true;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(video);
+
+    return () => observer.disconnect();
+  }, []);
+
 
 
 
@@ -264,7 +296,17 @@ const Agenda = () => {
 
         </div>
         
-        <video className="agenda-video w-full bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline />
+        {/* <video className="agenda-video w-full bg-gray-400 h-[250px] md:h-[500px] lg:h-[750px] mt-[5%] object-cover" src={Video2} autoPlay loop muted playsInline /> */}
+        <video
+          ref={videoRef}
+          className="agenda-video w-full h-[250px] md:h-[500px] lg:h-[750px] object-cover"
+          src={Video2}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
+
       </div>
     </section>
   );

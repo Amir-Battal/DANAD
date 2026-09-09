@@ -3,9 +3,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
-const Image7 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864283/065c92b85b776dbc322bdce60c09c848_rdreu1.jpg"
-const Image8 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864284/andrei-r-popescu--wxTHHFpB1E-unsplash_copy_af1nec.jpg"
-const Image9 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864282/the-cleveland-museum-of-art-fhqiVI9ot2U-unsplash_copy_sfngfw.jpg"
+const Image7 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952198/065c92b85b776dbc322bdce60c09c848.jpg"
+const Image8 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952201/andrei-r-popescu--wxTHHFpB1E-unsplash_copy.jpg"
+const Image9 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952201/the-cleveland-museum-of-art-fhqiVI9ot2U-unsplash_copy.jpg"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText)
 

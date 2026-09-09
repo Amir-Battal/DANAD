@@ -8,10 +8,10 @@ import Mask1 from "./Masks/Mask1";
 import Mask2 from "./Masks/Mask2";
 import Mask3 from "./Masks/Mask3";
 
-const Image3 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864222/DND_M40_copy_snrxxm.jpg"
-const Image4 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864220/DND_M24_copy_hq3yo2.jpg"
-const Image5 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864223/DND_M26_copy_mo7duo.jpg"
-const Image6 = "https://res.cloudinary.com/dqe36doqn/image/upload/v1765864222/DND_M23B_copy_2_yx0t3b.jpg"
+const Image3 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952115/DND_M40_copy.jpg"
+const Image4 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952112/DND_M24_copy.jpg"
+const Image5 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952113/DND_M26_copy.jpg"
+const Image6 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952113/DND_M23B_copy_2.jpg"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 

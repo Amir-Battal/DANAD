@@ -6,9 +6,9 @@ import { useEffect, useRef } from "react";
 
 
 const Video2 =
-  "https://res.cloudinary.com/dqe36doqn/video/upload/" +
+  "https://res.cloudinary.com/c9tptioy/video/upload/" +
   "f_mp4,vc_h264,ac_none,br_2500k/" +
-  "v1765864098/DND_Train_V02_db88yw.mp4";
+  "v1788951910/DND_Train_V02.mp4";
 
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)

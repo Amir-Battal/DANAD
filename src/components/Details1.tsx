@@ -8,10 +8,10 @@ import "../index.css"
 
 import { useEffect } from "react";
 
-const Image1 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952031/DND_M15_copy.jpg"
+const Image1 = "https://ik.imagekit.io/j9omozvmgf/DND%20M15.jpg"
 // import Image2 from "../assets/Images/Details1/DND M35.jpg"
-const Image3 = "https://res.cloudinary.com/c9tptioy/image/upload/v1788952030/DND_M37_copy.jpg"
-const Video1 = "https://res.cloudinary.com/c9tptioy/video/upload/v1788952061/121122.mp4"
+const Image3 = "https://ik.imagekit.io/j9omozvmgf/DND%20M37%20.jpg"
+const Video1 = "https://ik.imagekit.io/j9omozvmgf/121122.mp4"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
 

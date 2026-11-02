@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 const Image7 = "https://ik.imagekit.io/j9omozvmgf/traditionalCover.jpg"
-const Image8 = "https://ik.imagekit.io/j9omozvmgf/ancientManuscript.jpg"
+const Image8 = "https://ik.imagekit.io/j9omozvmgf/vase.jpg"
 const Image9 = "https://ik.imagekit.io/j9omozvmgf/ancientManuscript.jpg"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText)

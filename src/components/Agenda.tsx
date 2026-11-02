@@ -5,10 +5,13 @@ import { SplitText } from "gsap/SplitText";
 import { useEffect, useRef } from "react";
 
 
+// const Video2 =
+//   "https://res.cloudinary.com/c9tptioy/video/upload/" +
+//   "f_mp4,vc_h264,ac_none,br_2500k/" +
+//   "v1788951910/DND_Train_V02.mp4";
+
 const Video2 =
-  "https://res.cloudinary.com/c9tptioy/video/upload/" +
-  "f_mp4,vc_h264,ac_none,br_2500k/" +
-  "v1788951910/DND_Train_V02.mp4";
+  "https://ik.imagekit.io/j9omozvmgf/DND%20Train%20V02.mp4";
 
 
 gsap.registerPlugin(ScrollTrigger, useGSAP, SplitText)
